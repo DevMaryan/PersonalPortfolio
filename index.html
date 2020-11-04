@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset = 'UTF-8'>
+    <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+    <script src="https://kit.fontawesome.com/f1db609589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href = './css/style.css' rel='stylesheet'>
+    <title>Personal WebPage</title>
+</head>
+<!--     <i class="fab fa-optin-monster"></i>    -->
+<body>
+    <!-- Main Container -->
+    <div id = 'container'>
+        <!-- Left Block-->
+        <div class="info">
+            <img class = 'profilePic' src = './imgs/me.png' width = '180' height = '180'>
+            <div class = 'nameSurname py' onmouseover="style.color='#666'" onmouseout="style.color='#999'" onclick = "window.open('Marjan_Shapkaroski_Resume.pdf')" target = '_blank'>Marjan Shapkaroski</div>
+            <div class = 'hrLine'></div>
+            <div class = 'socialM py'>
+                <a href = 'https://www.facebook.com/maryan.shapkaroski/' target = '_blank'><i class = 'fab fa-facebook px fb bg'></i></a>
+                <a href = 'https://www.instagram.com/shapkaroski/'target = '_blank'><i class = 'fab fa-instagram px in bg'></i></a>
+                <a href = 'https://github.com/DevMaryan'target = '_blank'><i class = 'fab fa-github px gi bg'></i></a>
+            </div>
+        </div>
+        <!-- Right Block-->
+        <div class = 'content radius'>
+            <div class = 'w3-row radius'>
+                <a href = 'javascript:void(0)' onclick = "nextTab(event, 'PersonalInfo');">
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><i class="far fa-address-card"></i> Personal Info</div>
+                </a>
+                <a href = 'javascript:void(0)' onclick = "nextTab(event, 'Education');">
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><i class="fas fa-graduation-cap"></i> Education</div>
+                </a>
+                <a href = 'javascript:void(0)' onclick = "nextTab(event, 'Experience');">
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding radius2"><i class="fas fa-laptop-code"></i> Experience</div>
+                </a>
+
+                <!-- Personal Info Tab-->
+                <div id = 'PersonalInfo' class = 'w3-container tab'>
+                    <p class="w3-bar-item2"></p>
+                    <div class="w3-bar-block w3-card" style="width:130px">
+                        <button class="w3-bar-item w3-button leftlink" onclick="leftTabs(event, 'BasicInfo')">Basic Info</button>
+                        <button class="w3-bar-item w3-button leftlink" onclick="leftTabs(event, 'Hobbies')">Hobbies</button>
+                        <button class="w3-bar-item w3-button leftlink" onclick="leftTabs(event, 'ContactSec')">Contact</button>
+                        <button class="w3-bar-item w3-button leftlink" onclick="leftTabs(event, 'About')">About</button>
+                    </div>
+                      
+                    <div style="margin-left:135px; margin-top:-170px;">
+                       
+                        <div id="BasicInfo" class="w3-container leftab" >
+                            <h4>Basic Info</h4>
+                            <table class = 'txtColor'>
+                                <tr>
+                                    <td class = 'px txtRight'>Name</td>
+                                    <td onmouseover="style.color='#666'" onmouseout="style.color='#999'">Marjan</td>
+                                </tr>
+                                <tr>
+                                    <td class = 'px txtRight'>Surname</td>
+                                    <td onmouseover="style.color='#666'" onmouseout="style.color='#999'">Shapkaroski</td>
+                                </tr>
+                                <tr>
+                                    <td class = 'px txtRight'>Country</td>
+                                    <td onmouseover="style.color='#666'" onmouseout="style.color='#999'">Macedonia</td>
+                                </tr>
+                                <tr>
+                                    <td class = 'px txtRight' >City</td>
+                                    <td id = 'desc5' onmouseover="style.color='#666'" onmouseout="style.color='#999'"></td>
+                                    <td id = 'temp5' onmouseover="style.color='#666'" onmouseout="style.color='#999'"></td>
+                                    <td id = 'loc5' onmouseover="style.color='#666'" onmouseout="style.color='#999'"></td>
+                                </tr>
+                            </table>
+                        </div>
+                      
+                        <div id="Hobbies" class="w3-container leftab" style="display:none">
+                          <h4>Hobbies</h4>
+                          <table class = 'txtColor'>
+                            <tr class = 'px'>
+                                <td class = 'px txtRight'><i class="fas fa-swimming-pool"></i></td>
+                                <td>Swimming</td>
+                                <td class = 'px txtRight'><i class="fas fa-dumbbell"></i></td>
+                                <td>Gym</td>
+
+                                <td class = 'px txtRight'><i class="fas fa-user-astronaut"></i></td>
+                                <td>SCI-FI</td>
+                            </tr>
+                            <tr class = 'px'>
+                                <td class = 'px txtRight'><i class="fas fa-camera"></i></td>
+                                <td>Photography</td>
+                                <td class = 'px txtRight'><i class="fas fa-bicycle"></i></td>
+                                <td>Cycling</td>
+                                <td class = 'px txtRight'><i class="fas fa-utensils"></i></td>
+                                <td>Cooking</td>
+                            </tr>
+                            <tr>
+                                <td class = 'px txtRight'><i class="fab fa-bitcoin"></i></td>
+                                <td>Cryptocurrency</td>
+                            </tr>
+
+                        </table>
+                        </div>
+                      
+                        <div id="ContactSec" class="w3-container leftab" style = 'display:none'>
+                            <h4>Contact</h4>
+                            <p class = 'txtColor'>Email: maryan.shapkaroski at gmail.com</p>
+                            <p class = 'txtColor'>or you can fill the contact form bellow <i class="fas fa-envelope-open-text"></i></p>
+                        </div>
+                        <div id="About" class="w3-container leftab" style="display:none">
+                            <h4>About</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nesciunt pariatur atque eius Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, exercitationem?</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Education Tab -->
+                <div id = 'Education' class = 'w3-container tab' style = 'display:none'>
+                    <p class="w3-bar-item2"></p>
+                    <div class="w3-bar-block w3-card" style="width:130px">
+                        <button class="w3-bar-item w3-button leftlink" onclick="leftTabs(event, 'Educ')">Education</button>
+                        <button class="w3-bar-item w3-button leftlink" onclick="leftTabs(event, 'Awards')">Awards</button>
+                        <button class="w3-bar-item w3-button leftlink" onclick="leftTabs(event, 'Certifications')">Certifications</button>
+                        <button class="w3-bar-item w3-button leftlink" onclick="leftTabs(event, 'Publications')">Publications</button>
+                    </div>
+                      
+                    <div style="margin-left:135px; margin-top:-170px;">
+                       
+                        <div id="Educ" class="w3-container leftab">
+                            <h4>Education</h4>
+                            <table>
+                                <tr>
+                                    <td><img src = './imgs/nw2.jpg' width = '50' height = '50'></td>
+                                    <td class = 'txtColor px'>Norwich University; Northfield, Vermont, USA - 2013</td>
+                                </tr>
+                                <tr>
+                                    <td><img src = './imgs/Uist-macedonia.gif' width = '50' height = '50'></td>
+                                    <td class = 'txtColor px'>University of Information Science and Technology; Ohrid, North Macedonia - 2009 - 2012</td>
+                                </tr>
+                            </table>
+                        </div>
+                      
+                        <div id="Awards" class="w3-container leftab" style="display:none">
+                            <h4>Awards</h4>
+                            <table>
+                                <tr>
+                                    <td><img src = './imgs/award1.jpg' class = 'rd' width = '50' height = '50'></td>
+                                    <td class = 'txtColor px'>Excellent Performances – Rector Award, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td><img src = './imgs/award2.jpg' class = 'rd' width = '50' height = '50'></td>
+                                    <td class = 'txtColor px'> Excellent Performances – Rector Award, 2012</td>
+                                </tr>
+                            </table>
+                        </div>
+                      
+                        <div id="Certifications" class="w3-container leftab" style="display:none">
+                            <h4>Certifications</h4>
+                            <table>
+                                <tr>
+                                    <td><img src = './imgs/blank.jpg' class = 'rd' width = '50' height = '50'></td>
+                                    <td class = 'txtColor px'><span class = 'txtColor2'>2018</span> Sarpino’s General Manager Certificate</td>
+                                </tr>
+                                <tr>
+                                  <td><img src = './imgs/cert.jpg' class = 'rd' width = '50' height = '50'></td>
+                                  <td class = 'txtColor px'><span class = 'txtColor2'>2015</span> National Registry of Food Safety Professionals; Food Safety Manager</td>
+                                </tr>
+                                <tr>
+                                    <td><img src = './imgs/cert-norwcih.jpg' class = 'rd' width = '50' height = '50'></td>
+                                    <td class = 'txtColor px'><span class = 'txtColor2'>2012</span> Spring Certification for Network Security – International Cyber Defense Practicum </td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <div id="Publications" class="w3-container leftab" style="display:none">
+                            <h4>Publications</h4>
+                            <p class = 'txtColor'>CS Magazine for IT Security Professionals - AccessData Forensics Suite article – Marjan Shapkaroski, Georgij Lazarevski, 01 May 2013. </p>
+                            <a href = 'https://www.scmagazine.com/group-test/digital-forensic-tools-3/' target = '_blank'><span class = 'txtColor2'>LINK</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience -->
+                <div id = 'Experience' class = 'w3-container tab' style = 'display:none'>
+                    <p class="w3-bar-item2"></p>
+                    <div class="w3-bar-block w3-card" style="width:130px">
+
+                        <button class="w3-bar-item w3-button leftlink" onclick="leftTabs(event, 'Exp')">Career <i id = 'cont' onclick="myApp.printTable()" class="fas fa-print bgNon"></i></button>
+                        <button class="w3-bar-item w3-button leftlink" onclick="leftTabs(event, 'Jb')">Projects</button>
+                        <button class="w3-bar-item w3-button leftlink" onclick="leftTabs(event, 'Python')">Python</button>
+                        <button class="w3-bar-item w3-button leftlink" onclick="leftTabs(event, 'NetC')">.NET Core</button>
+                    </div>
+                    <input id='cont' type="button" value="Print Table" onclick="myApp.printTable()" style='display:none;' />
+
+                    <div style="margin-left:135px; margin-top:-170px;">
+                       
+                        <div id="Exp" class="w3-container leftab">
+                            <table class = 'tableXP'>
+                                <header>
+                                    <td class = 'hdr px py'>Employer</td>
+                                    <td class = 'hdr px py'>Country</td>
+                                    <td class = 'hdr px py'>Job Title</td>
+                                    <td class = 'hdr px py'>Supervisor</td>
+                                    <td class = 'hdr px py'>Time Employed</td>
+                                </header>
+                                <tbody>
+                                    <tr>
+                                        <td class = 'pdx'>Sarpinos</td>
+                                        <td class = 'pdx'>USA, IL</td>
+                                        <td class = 'pdx'>Manager</td>
+                                        <td class = 'pdx'>Ivan Marinov</td>
+                                        <td class = 'pdx'>5 years</td>
+                                    </tr>
+                                    <tr >
+                                        <td class = 'pdx'>Sarpinos</td>
+                                        <td class = 'pdx'>USA, IL</td>
+                                        <td class = 'pdx'>Pizza Maker</td>
+                                        <td class = 'pdx'>Ivan Marinov</td>
+                                        <td class = 'pdx'>2 years</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = 'pdx'>Norwich University</td>
+                                        <td class = 'pdx'>USA, VT</td>
+                                        <td class = 'pdx'>Forensics Analyst</td>
+                                        <td class = 'pdx'>Ph. D. Peter Stephenson</td>
+                                        <td class = 'pdx'>1 month</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = 'pdx'>UIST</td>
+                                        <td class = 'pdx'>Macedonia</td>
+                                        <td class = 'pdx'>IT Assistant</td>
+                                        <td class = 'pdx'>Ph. D. Ustijana Rechkoska</td>
+                                        <td class = 'pdx'>1 year</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = 'pdx'>Radio Lav</td>
+                                        <td class = 'pdx'>Macedonia</td>
+                                        <td class = 'pdx'>Technician</td>
+                                        <td class = 'pdx'>Ivan Pasoski</td>
+                                        <td class = 'pdx'>3 months</td>
+                                    </tr>
+                                    <tr>
+                                        <td class = 'pdx'>SkyNet Internet Caffee</td>
+                                        <td class = 'pdx'>Macedonia</td>
+                                        <td class = 'pdx'>Cashier</td>
+                                        <td class = 'pdx'>Marjan Trajceski</td>
+                                        <td class = 'pdx'>3 years</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            
+                        </div>
+                      
+                        <div id="Jb" class="w3-container leftab" style="display:none">
+                            <h4>Projects</h4>
+                        </div>
+                      
+                        <div id="Python" class="w3-container leftab" style="display:none">
+                            <h4>Python</h4>
+                            <p>Tokyo is the capital of Japan.</p>
+                            <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+                        </div>
+                        <div id="NetC" class="w3-container leftab" style="display:none">
+                            <h4>.NET Core</h4>
+                            <p>Tokyo is the capital of Japan.</p>
+                            <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class = 'counter'>
+                <div class="bx1 pdx py">&nbsp;<i class="fab fa-python"></i> Projects <span class = 'circle'>2</span> <span class = 'crta'>|</span></div>
+                <div class="bx1 pdx py">&nbsp;<i class="fas fa-globe-africa"></i> Projects <span class = 'circle'>2</span></div>
+                <div class = 'px py mpx'>Last update:<span id = 'Modified' ></span></div>
+            </div>
+        </div>
+    </div>
+    <div id = 'Contact'>    
+        <a href = '#' value = 'Show Div' onclick = "toggle(this);" class = 'btnForm'><i class="fas fa-envelope-open-text"></i></a>
+       <div id="cntc" class="box hide">
+           <form id = 'cntc' action="https://formspree.io/f/moqpwpwp" method="POST">
+               <table class = 'tbl'>
+                   <tr>
+                       <td><label id = 'lbl' text="_replyto">Email</label></td>
+                       <td><input id = 'frmName' type = 'text'><button name = 'submit' class = 'btnSubmit' type="submit" target = '_blank'>Send</button></td>
+                       
+                   </tr>
+                   <tr>
+                       <td><label id = 'msg' text="message">Message</label></td>
+                       <td><textarea id = 'frmMessageBox'  name = 'message' cols = '40' rows = '3'></textarea></td>
+                   </tr>
+               </table>
+           </form>
+       </div>
+   </div>
+
+</body>
+<script src = './js/topTabs.js'></script>
+<script src = './js/leftTabs.js'></script>
+<script src = './js/printCareer.js'></script>
+<script src = './js/contactSlide.js'></script>
+<script src = './js/lastModified.js'></script>
+<script src = './js/weather.js'></script>
+
+</html>

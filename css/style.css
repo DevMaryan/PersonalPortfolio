@@ -1,0 +1,367 @@
+:root{
+    --main-background-color: #F5F7FA;
+    --shadow-box-shadow: 0 2px 10px 0 rgba(136,136,136,0.77);
+    --forms-color:#f2f2f2;
+    --primary-color:#5B507A;
+    --secondary-color:#916C80;
+    --border-line:#e0e0e0;
+    --text-color:#999;
+    --text-hover:#666;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:Helvetica, sans-serif;
+    background-color:#F5F7FA;
+}
+
+#container {
+    display:flex;
+    flex-direction: row;
+    background-color:#f2f2f2;
+    width:900px;
+    margin:auto;
+    margin-top:250px;
+    box-shadow: var(--shadow-box-shadow);
+    border-radius:8px;
+
+
+}
+
+.info{
+    width:30%;
+    padding:20px;
+    border-right:2px solid #e0e0e0;
+    border-radius:8px 0px 0px 8px;
+    background-color:var(--forms-color);
+
+    
+}
+.profilePic{
+    display:block;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0.5px 1px 3px 1px #9999;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.info img{
+    margin-bottom:5px;
+}
+
+.content{
+    position:relative;
+    width:70%;
+    /*background-color:#f2f2f2; */
+    border-radius:8px;
+}
+.nameSurname{
+    text-align: center;
+    color:var(--text-color);
+    background-color:var(--forms-color);
+    cursor:pointer;
+}
+.socialM{
+    text-align: center;
+    background-color:var(--forms-color);
+}
+.socialM a{
+    color:var(--text-color);
+    font-size:18px;
+}
+.bg{
+    background-color:var(--forms-color);
+}
+
+/* Content */
+.w3-row a{
+    color:var(--text-color);
+    text-align:center;
+}
+.w3-hover-light-grey:hover{
+    color:var(--text-hover) !important;
+}
+.w3-container{
+    border-radius:8px;
+}
+.w3-border-cyan, .w3-hover-border-cyan:active {
+    border-color: #00bcd4 !important;
+}
+.counter{
+    position:absolute;
+    width: 100%;
+    bottom:0;
+    right:0;
+    display:flex;
+    padding:2px;
+    color:var(--text-hover);
+    border-radius:8px;
+}
+.radius2{
+    border-radius:0px 8px 0px 0px;
+}
+.radius{
+    border-radius:8px;
+}
+.crta{
+    color:#e0e0e0;
+}
+#BasicInfo h4{
+    color:var(--text-hover);
+}
+#Hobbies h4{
+    color:var(--text-hover);
+}
+#Contact2 h4{
+    color:var(--text-hover);
+}
+#About h4{
+    color:var(--text-hover);
+}
+#About p{
+    color:var(--text-color);
+}
+#Educ h4{
+    color:var(--text-hover);
+}
+#Awards h4{
+    color:var(--text-hover);
+}
+#Certifications{
+    color:var(--text-hover);
+}
+#Publications h4{
+    color:var(--text-hover);
+}
+#Jb h4{
+    color:var(--text-hover);
+}
+#Python h4{
+    color:var(--text-hover);
+}
+#NetC h4{
+    color:var(--text-hover);
+}
+#ContactSec h4{
+    color:var(--text-hover);
+}
+
+.txtColor{
+    color:var(--text-color);
+}
+.txtColor2{
+    color:var(--text-hover);
+}
+.txtRight{
+    text-align:right;
+}
+table tr{
+    border-right:1px solid #999;
+}
+.rd{
+    border-radius:3px;
+}
+.tableXP{
+    font-size:11px;
+    padding:10px;
+}
+.tableXP header{
+    border:1px solid #e0e0e0;
+}
+.hdr{
+    text-align: center;
+    border-bottom:1px solid #e0e0e0;
+}
+input{
+    background-color: white;
+    border: 1px solid #bdbbbb;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    cursor: text;
+    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-width: 0.1px;
+    border-radius:3px;
+}
+#Contact label{
+    color:var(--text-hover);
+    padding:10px;
+}
+.pdx{
+    padding-right:5px;
+    padding-left:5px;
+}
+/* Personal Info Tabs*/
+.w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover{
+    background-color:#fff;
+}
+.w3-card, .w3-card-2 {
+    /*box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);*/
+    margin-top: 14px;
+    box-shadow: 0 8px 6px -10px #999;
+    border: 1px solid #e0e0e0;
+}
+.w3-blue, .w3-hover-blue:hover {
+    color: #fff !important;
+    background-color: #00bcd4 !important;
+}
+.w3-bar-block{
+    color:#999 !important;
+
+}
+.w3-bar-item:hover{
+    color:#fff !important;
+}
+.w3-bar-item2{
+    text-align:left;
+    margin-left:80px;
+    color:#999;
+    font-size:20px;
+}
+input{
+    border:1px solid #e0e0e0;
+    color:var(--text-hover);
+    padding:5px;
+}
+textarea{
+    background:#fff;
+    border:1px solid #e0e0e0;
+    color:var(--text-hover);
+    padding:5px;
+    max-width:300px;
+    max-height:170px;
+    margin-top:5px;
+    border-radius: 3px 3px 0px 3px;
+}
+.btnSubmit{
+    color:var(--text-hover);
+    padding:5px 38px 5px 38px;
+    border:1px solid #e0e0e0;
+    margin-left:10px;
+    cursor:pointer;
+}
+/* Utilities Classes */
+
+
+.px {
+    padding:0px 5px 0px 5px;
+}
+.py{
+    padding:5px 0px 5px 0px;
+}
+.my{
+    margin:5px 0px 5px 0px;
+}
+.mx{
+    margin:0px 5px 0px 5x;
+}
+
+#cont{
+    padding-left:25px;
+}
+.hrLine{
+    width:100px;
+    height:1px;
+    background-color:var(--border-line);
+    margin:auto;
+
+}
+.bgNon{
+    background:none;
+    text-align: right;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    text-align: center;
+    color:var(--text-color);
+}
+.fb:hover{
+    color:#3b5998;
+}
+.in:hover{
+    color:#3f729b;
+}
+.gi:hover{
+    color:#24292E;
+}
+
+/* Contact Field */
+
+#Contact{
+    width:400px;
+    height:170px;
+    margin:0 auto;
+    text-align: center;
+    margin-top:10px;
+    color:var(--text-color);
+
+}
+#Contact2{
+    width:400px;
+    height:170px;
+    color:var(--text-color);
+
+}
+#cntc{
+    padding:5px;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+.btnForm{
+    padding:5px 10px 5px 10px;
+    
+}
+.mpx{
+    padding-left:10px;
+    font-size:9px;
+    padding-top:12px;
+}
+
+.circle{
+
+    color:#F5F7FA;
+    border-radius:50%;
+    background-color:#00bcd4;
+    text-align: center;
+    font-size:12px;
+    font-weight: bold;
+    padding:2px 6px;
+    cursor:hand;
+}
+.box {
+    width: 450px;
+    height: 250px;
+    overflow: hidden;
+    }
+.hide{
+    height: 0;
+    border:0px;
+}
+.tbl{
+    border:1px solid #e0e0e0;
+    padding:8px;
+    border-radius:3px;
+    background-color:var(--forms-color);
+
+}
+.active{
+    background-color:cyan;
+}
+.tbl td{
+    background-color:var(--forms-color);
+}
+#lbl{
+    background-color:var(--forms-color);
+}
+#msg{
+    background-color:var(--forms-color);
+}
